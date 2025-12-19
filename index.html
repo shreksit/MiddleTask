@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <!-- הגדרות בסיס + תמיכה ברספונסיביות -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>שלבי פרויקט גמר בטכנולוגיות למידה</title>
+
+    <!-- Bootstrap (RTL) + פונט Assistant + עיצוב אישי -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- לינק דילוג: מאפשר למקלדת לדלג ישר לתוכן המרכזי -->
+    <a class="visually-hidden-focusable" href="#main-content">
+      דלג לתוכן המרכזי
+    </a>
+
+    <!-- Header: לוגו + תפריט ניווט (כולל כפתור המבורגר למובייל) -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="header-logo">
+          <img
+            src="assets/hit-logo.png"
+            alt="HIT - טכנולוגיות למידה"
+            class="hit-logo"
+          />
+        </div>
+
+        <!-- כפתור פתיחת תפריט במובייל -->
+        <button
+          class="hamburger-btn"
+          id="hamburgerBtn"
+          aria-label="פתיחת תפריט"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          type="button"
+        >
+          ☰
+        </button>
+
+        <!-- תפריט ראשי: קישורים לגלילה לסקשנים בדף -->
+        <nav class="header-nav" aria-label="תפריט ראשי">
+          <ul class="main-nav" id="mainNav" hidden>
+            <li class="nav-item">
+              <a class="nav-link" href="#top">דף הבית</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stages">שלבי הפרויקט</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#form">טופס</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero: כותרת ראשית והסבר קצר -->
+    <section class="hero" id="top">
+      <div class="hero-image-overlay">
+        <div class="container">
+          <div class="hero-box text-center">
+            <h1 class="hero-title">שלבי פרויקט גמר בטכנולוגיות למידה</h1>
+            <p class="hero-subtitle">
+              מדריך לסטודנטים על מהלך הפרויקט משלב הרעיון ועד ההגשה הסופית
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main: אזור התוכן המרכזי של הדף -->
+    <main id="main-content">
+      <!-- אזור חיפוש: מסנן כרטיסיות לפי טקסט בכותרת -->
+      <section class="search-section">
+        <div class="container search-container">
+          <div class="search-wrapper">
+            <input
+              type="text"
+              class="search-input"
+              id="searchInput"
+              placeholder="חיפוש פרויקט"
+              aria-label="חיפוש פרויקט"
+            />
+            <button class="btn-search" type="button" id="searchButton">
+              חיפוש
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- כרטיסיות: הצגה ויזואלית של נושאים/שלבים בפרויקט -->
+      <section class="stages-section py-5" id="stages">
+        <div class="container">
+          <div class="row g-4">
+            <!-- כרטיסיה בודדת -->
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="stage-card">
+                <div class="stage-card-top">
+                  <img
+                    src="assets/files-img.jpg"
+                    alt="מסמכים וטפסים על שולחן עבודה"
+                    class="stage-image"
+                  />
+                </div>
+                <div class="stage-card-bottom">
+                  <h2 class="stage-title">טפסים</h2>
+                  <p class="stage-desc">טפסים שימושיים לניהול פרויקט</p>
+                  <button class="btn btn-stage" type="button">
+                    צפייה בתוכן
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="stage-card">
+                <div class="stage-card-top">
+                  <img
+                    src="assets/methods.webp"
+                    alt="עבודה בצוות על שיטות ניהול פרויקטים"
+                    class="stage-image"
+                  />
+                </div>
+                <div class="stage-card-bottom">
+                  <h2 class="stage-title">שיטות בניהול פרויקטים</h2>
+                  <p class="stage-desc">מתודולוגיות עבודה לניהול פרויקט</p>
+                  <button class="btn btn-stage" type="button">
+                    צפייה בתוכן
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="stage-card">
+                <div class="stage-card-top">
+                  <img
+                    src="assets/stages.webp"
+                    alt="סולם עץ שמייצג שלבים בפרויקט"
+                    class="stage-image"
+                  />
+                </div>
+                <div class="stage-card-bottom">
+                  <h2 class="stage-title">שלבי הפרויקט</h2>
+                  <p class="stage-desc">מהם שלבי הפרויקט הנדרשים</p>
+                  <button class="btn btn-stage" type="button">
+                    צפייה בתוכן
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="stage-card">
+                <div class="stage-card-top">
+                  <img
+                    src="assets/start-work.webp"
+                    alt="התחלת עבודה על פרויקט"
+                    class="stage-image"
+                  />
+                </div>
+                <div class="stage-card-bottom">
+                  <h2 class="stage-title">תחילת העבודה</h2>
+                  <p class="stage-desc">איך מתניעים פרויקט?</p>
+                  <button class="btn btn-stage" type="button">
+                    צפייה בתוכן
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="stage-card">
+                <div class="stage-card-top">
+                  <img
+                    src="assets/kick-off.webp"
+                    alt="פגישת התנעה של צוות פרויקט"
+                    class="stage-image"
+                  />
+                </div>
+                <div class="stage-card-bottom">
+                  <h2 class="stage-title">פגישת התנעה</h2>
+                  <p class="stage-desc">חשיבות, התנהלות ודרכי פעולה</p>
+                  <button class="btn btn-stage" type="button">
+                    צפייה בתוכן
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="stage-card">
+                <div class="stage-card-top">
+                  <img
+                    src="assets/targets.webp"
+                    alt="מטרה ופקקי צבע שמסמנים מטרות"
+                    class="stage-image"
+                  />
+                </div>
+                <div class="stage-card-bottom">
+                  <h2 class="stage-title">מטרות</h2>
+                  <p class="stage-desc">איך פוגעים בול לצרכים?</p>
+                  <button class="btn btn-stage" type="button">
+                    צפייה בתוכן
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="stage-card">
+                <div class="stage-card-top">
+                  <img
+                    src="assets/gant.webp"
+                    alt="תרשים גאנט שמייצג לוח זמנים לפרויקט"
+                    class="stage-image"
+                  />
+                </div>
+                <div class="stage-card-bottom">
+                  <h2 class="stage-title">גאנט</h2>
+                  <p class="stage-desc">איך מנהלים את הזמן נכון בפרויקט?</p>
+                  <button class="btn btn-stage" type="button">
+                    צפייה בתוכן
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- טופס: איסוף נתונים + שליחה ל-SCORM (הנראות מנוהלת ב-JS) -->
+      <section class="survey-section py-5" id="form">
+        <div class="container">
+          <div class="survey-card">
+            <!-- הודעת הצלחה: מוצגת אחרי שליחה תקינה של הטופס -->
+            <div
+              id="successOverlay"
+              class="form-success-overlay"
+              role="alert"
+              aria-live="assertive"
+              hidden
+              tabindex="-1"
+            >
+              <div class="form-success-box">
+                <p class="form-success-title">הטופס נשלח בהצלחה!</p>
+              </div>
+            </div>
+
+            <form id="scorm-form" novalidate>
+              <!-- הודעת שגיאה כללית: מופיעה כשיש שדות לא תקינים -->
+              <div
+                id="formErrorSummary"
+                class="field-error"
+                role="alert"
+                aria-live="assertive"
+                hidden
+              >
+                יש שדות עם שגיאה. בדקי את השדות המסומנים ונסי שוב.
+              </div>
+
+              <!-- שדה: שם מלא -->
+              <div class="mb-4 form-field">
+                <label for="fullName" class="form-label">
+                  שם מלא: <span class="required-star">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  class="form-control survey-input"
+                  placeholder="שמך המלא"
+                  required
+                  aria-describedby="error-fullName"
+                />
+                <div class="field-error" id="error-fullName" role="alert"></div>
+              </div>
+
+              <!-- שדה: סוג פרויקט (בחירה מרובה בהתאמה אישית) -->
+              <div class="mb-4 form-field">
+                <label for="projectType" class="form-label">
+                  איזה סוג פרויקט מעניין אותך?
+                  <span class="required-star">*</span>
+                </label>
+
+                <div class="custom-dd" id="projectTypeDD">
+                  <button
+                    type="button"
+                    class="custom-dd-btn survey-input"
+                    id="projectTypeBtn"
+                    aria-expanded="false"
+                    aria-describedby="error-projectType"
+                    aria-required="true"
+                  >
+                    <span class="custom-dd-placeholder">בחרו מתוך הרשימה</span>
+                    <span class="custom-dd-values" id="projectTypeValues"></span>
+                  </button>
+
+                  <div class="custom-dd-menu" id="projectTypeMenu">
+                    <button type="button" class="custom-dd-option" data-value="content">
+                      מחוללי תוכן
+                    </button>
+                    <button type="button" class="custom-dd-option" data-value="ai-assistants">
+                      צ׳אטבוטים / AI
+                    </button>
+                    <button type="button" class="custom-dd-option" data-value="mini-course">
+                      מיני קורס
+                    </button>
+                    <button type="button" class="custom-dd-option" data-value="lms">
+                      לומדות
+                    </button>
+                    <button type="button" class="custom-dd-option" data-value="data-viz">
+                      מציאות רבודה/מדומה
+                    </button>
+                  </div>
+
+                  <!-- hidden input: שומר את הבחירות בפורמט שה-JS קורא ושולח ל-SCORM -->
+                  <input type="hidden" id="projectType" name="projectType" value="" />
+                </div>
+
+                <div class="field-error" id="error-projectType"></div>
+              </div>
+
+              <!-- שדה: תחום דעת אהוב (בחירה יחידה) -->
+              <fieldset class="mb-4 form-field" aria-describedby="error-favField">
+                <legend class="form-label mb-2">
+                  מהו תחום הדעת האהוב עלייך בתואר?
+                  <span class="required-star">*</span>
+                </legend>
+
+                <div class="survey-radios">
+                  <label class="radio-item">
+                    <input type="radio" name="favField" value="technology" required />
+                    תכנות
+                  </label>
+                  <label class="radio-item">
+                    <input type="radio" name="favField" value="design" />
+                    עיצוב
+                  </label>
+                  <label class="radio-item">
+                    <input type="radio" name="favField" value="instruction" />
+                    הדרכה
+                  </label>
+                </div>
+
+                <div class="field-error" id="error-favField"></div>
+              </fieldset>
+
+              <!-- אינדיקציה לשדות חובה + כפתור שליחה -->
+              <p class="required-note required-note-submit">*שדה חובה</p>
+              <div class="submit-wrapper">
+                <button type="submit" class="btn submit-btn">שליחת הטופס</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer: פרטי קורס/יוצרים -->
+    <footer class="site-footer py-3">
+      <div class="container footer-inner">
+        <div class="footer-center">
+          <p class="footer-line">
+            <strong>הפקולטה לטכנולוגיות למידה · קורס תכנות 3</strong>
+          </p>
+          <p class="footer-line">נועה טננבאום · ליאור חלד · שיר שלי</p>
+          <p class="footer-line">ד״ר דן כהן וקס · אלומה אפל</p>
+          <p class="footer-line small">Design by Freepik</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- סקריפטים: Bootstrap + SCORM wrapper + קובץ JS ראשי -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="SCORM_API_wrapper.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
